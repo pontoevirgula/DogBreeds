@@ -1,0 +1,86 @@
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/clDog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ProgressBar
+            android:layout_marginTop="290dp"
+            android:layout_marginStart="150dp"
+            android:id="@+id/pbLoadingDog"
+            android:visibility="gone"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+     <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="192dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"/>
+            <ImageView
+                    android:id="@+id/toolbarImageDog"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:fitsSystemWindows="true"
+                    app:layout_collapseMode="parallax"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nsvDog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="24dp">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:lineSpacingExtra="8dp"
+                    android:text="RESUMO DA RAÇA DO CACHORRO"
+                    android:padding="10dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:lineSpacingExtra="8dp"
+                    android:text="RESUMO DA RAÇA DO CACHORRO"
+                    android:padding="10dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:lineSpacingExtra="8dp"
+                    android:text="RESUMO DA RAÇA DO CACHORRO"
+                    android:padding="10dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:lineSpacingExtra="8dp"
+                    android:text="RESUMO DA RAÇA DO CACHORRO"
+                    android:padding="10dp"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

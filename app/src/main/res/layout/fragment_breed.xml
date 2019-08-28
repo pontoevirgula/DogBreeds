@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbarBreed"
+            android:background="?attr/colorPrimary"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+                android:text="RAÇAS DE CACHORRO"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+            android:id="@+id/contentFrameFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp" />
+
+
+     <android.support.v7.widget.RecyclerView
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/toolbarBreed"
+             android:id="@+id/rvBreeds"
+             tools:listitem="@layout/item_breed_adapter"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+     <ProgressBar
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:id="@+id/pbLoadingBreed"
+             android:visibility="gone"
+             android:layout_width="70dp"
+             android:layout_height="70dp"/>
+ </android.support.constraint.ConstraintLayout>
