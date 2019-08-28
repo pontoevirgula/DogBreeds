@@ -14,5 +14,9 @@ class BreedActivity : BaseActivity() {
         navigateTo(BreedFragment(),R.id.contentFrameActivity,BreedFragment.TAG)
     }
 
+    override fun onBackPressed() {
+
+    }
+
 
 }

@@ -57,4 +57,14 @@ class DogDetailFragment : BaseFragment<IBreedContract.DogDetailPresenter>(), IBr
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        llDescription.setOnClickListener {
+            val ft = fragmentManager?.beginTransaction()
+            ft?.replace(R.id.contentFrameActivity, BreedFragment(), BreedFragment.TAG)
+            ft?.commit()
+        }
+    }
+
+
 }
