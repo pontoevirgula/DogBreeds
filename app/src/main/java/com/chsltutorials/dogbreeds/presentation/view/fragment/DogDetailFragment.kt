@@ -6,11 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.chsltutorials.dogbreeds.R
-import com.chsltutorials.dogbreeds.base.BaseFragment
+import com.chsltutorials.dogbreeds.core.bases.BaseFragment
 import com.chsltutorials.dogbreeds.presentation.IBreedContract
-import com.chsltutorials.dogbreeds.presentation.presenter.BreedPresenter
 import com.chsltutorials.dogbreeds.presentation.presenter.DogDetailPresenter
-import kotlinx.android.synthetic.main.activity_breeds.*
 import kotlinx.android.synthetic.main.fragment_dog_detail.*
 
 class DogDetailFragment : BaseFragment<IBreedContract.DogDetailPresenter>(), IBreedContract.DogDetailView {

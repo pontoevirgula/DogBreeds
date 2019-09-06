@@ -1,7 +1,7 @@
 package com.chsltutorials.dogbreeds.presentation.presenter
 
 import android.util.Log
-import com.chsltutorials.dogbreeds.base.BasePresenter
+import com.chsltutorials.dogbreeds.core.bases.BasePresenter
 import com.chsltutorials.dogbreeds.model.service.DogCeoApi
 import com.chsltutorials.dogbreeds.model.service.DogCeoService
 import com.chsltutorials.dogbreeds.presentation.IBreedContract

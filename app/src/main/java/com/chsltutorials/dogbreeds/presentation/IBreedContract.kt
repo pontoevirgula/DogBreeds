@@ -1,13 +1,18 @@
 package com.chsltutorials.dogbreeds.presentation
 
-import com.chsltutorials.dogbreeds.base.IBaseContract
+import com.chsltutorials.dogbreeds.core.bases.IBaseContract
+import com.chsltutorials.dogbreeds.core.util.Empty
+import com.chsltutorials.dogbreeds.core.util.Failure
+import com.chsltutorials.dogbreeds.core.util.Loading
+import com.chsltutorials.dogbreeds.core.util.Success
 
 interface IBreedContract {
 
     interface BreedView : IBaseContract.View<IBreedContract.BreedPresenter>{
-        fun showSuccess(names: List<String>)
-        fun showError()
-        fun showLoading()
+        fun showSuccess(resource: Success<List<String>>)
+        fun showEmptySuccess(resource: Empty<List<String>>)
+        fun showError(resource : Failure)
+        fun showLoading(loading: Loading)
     }
 
     interface DogDetailView : IBaseContract.View<IBreedContract.DogDetailPresenter>{

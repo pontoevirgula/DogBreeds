@@ -1,4 +1,4 @@
-package com.chsltutorials.dogbreeds.base
+package com.chsltutorials.dogbreeds.core.bases
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

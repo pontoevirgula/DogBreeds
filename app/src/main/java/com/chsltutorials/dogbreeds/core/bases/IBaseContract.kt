@@ -1,4 +1,4 @@
-package com.chsltutorials.dogbreeds.base
+package com.chsltutorials.dogbreeds.core.bases
 
 interface IBaseContract {
 

@@ -1,7 +1,7 @@
 package com.chsltutorials.dogbreeds.presentation.view.activity
 
 import android.os.Bundle
-import com.chsltutorials.dogbreeds.base.BaseActivity
+import com.chsltutorials.dogbreeds.core.bases.BaseActivity
 import com.chsltutorials.dogbreeds.R
 import com.chsltutorials.dogbreeds.presentation.view.fragment.BreedFragment
 
