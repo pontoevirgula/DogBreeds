@@ -36,10 +36,9 @@ class BreedFragment : BaseFragment<IBreedContract.BreedPresenter>(), IBreedContr
     private fun populateBreed(items: List<String>) : List<Breed>{
 
         val breeds: MutableList<Breed> = ArrayList()
-        lateinit var breed : Breed
 
         for (name : String in items){
-            breed = Breed(name)
+            val breed = Breed(name)
             breed.nome = name
             breeds.add(breed)
         }
@@ -85,9 +84,9 @@ class BreedFragment : BaseFragment<IBreedContract.BreedPresenter>(), IBreedContr
         toolbarBreed.visibility = View.VISIBLE
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_breed, container, false)
-    }
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) =
+        inflater.inflate(R.layout.fragment_breed, container, false)
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
